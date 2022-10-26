@@ -1,0 +1,111 @@
+.Plan {
+  margin-top: 300px;
+  .headMobile {
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+    font-weight: bold;
+  }
+  .plan_card {
+    width: 25%;
+    padding: 40px 10px;
+    color: white;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    i {
+      font-size: 95px;
+      display: block;
+      margin-top: 20px;
+    }
+    .head {
+      font-weight: bold;
+      padding: 7px 0;
+    }
+    .desc {
+      padding: 10px 0;
+    }
+  }
+  .lg_card {
+    width: 40%;
+    color: $orange-color;
+  }
+  .Text_lg_Card {
+    padding: 50px 20px 0;
+    .head {
+      font-size: 46px;
+      font-family: fantasy;
+      font-weight: lighter;
+    }
+    p {
+      text-decoration: underline;
+    }
+    .desc {
+      color: #333;
+    }
+    .more {
+      width: 250px;
+      margin: 30px 0;
+      font-size: 19px;
+      text-align: center;
+      color: white;
+      transition: 0.4s;
+      border: 1px solid $orange-color;
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+        background-color: $orange-color;
+        left: 0;
+        z-index: -1;
+        transition: 0.4s;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      &:hover {
+        color: $orange-color;
+        &::after {
+          bottom: -50%;
+        }
+        &::before {
+          top: -50%;
+        }
+      }
+    }
+  }
+  .plan_card,
+  .lg_card {
+    margin: 20px auto;
+    font-weight: bold;
+  }
+  .plan_card_01 {
+    background-color: $orange-color;
+  }
+  .plan_card_02 {
+    background-color: $blue-color;
+  }
+  @media (max-width: 767px) {
+    margin-top: 100px;
+    .plan_card {
+      width: 100%;
+      margin: 0;
+    }
+    .headMobile {
+      display: block;
+    }
+    .lg_card {
+      width: 100%;
+    }
+  }
+}

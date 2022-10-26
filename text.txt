@@ -1,0 +1,7 @@
+ "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
+  "homepage": "https://Abdallh194.github.io/ASR/",
+MG ZS SUV
+Mercedes-Benz
+Toyota Corolla

@@ -1,0 +1,60 @@
+{
+  "Cars": [
+    {
+      "id": 1,
+      "CarTitle": "Toyota Corolla",
+      "CarImg": "/toyota.png",
+      "price": 300000,
+      "qty": 1
+    },
+    {
+      "id": 2,
+      "CarTitle": "Škoda",
+      "CarImg": "/skoda.png",
+      "price": 60000,
+      "qty": 1
+    },
+    {
+      "id": 3,
+      "CarTitle": "KIA Sportage",
+      "CarImg": "/kia.png",
+      "price": 100000,
+      "qty": 1
+    },
+    {
+      "id": 4,
+      "CarTitle": "Mercedes-Benz",
+      "CarImg": "/mercedce.png",
+      "price": 200000,
+      "qty": 1
+    },
+    {
+      "id": 5,
+      "CarTitle": "BMW X6 M",
+      "CarImg": "/bmw.png",
+      "price": 300000,
+      "qty": 1
+    },
+    {
+      "id": 6,
+      "CarTitle": "Jeep",
+      "CarImg": "/jeep.png",
+      "price": 300000,
+      "qty": 1
+    },
+    {
+      "id": 7,
+      "CarTitle": "HYUNDAI",
+      "CarImg": "/hyundai.png",
+      "price": 70000,
+      "qty": 1
+    },
+    {
+      "id": 8,
+      "CarTitle": "MG ZS SUV",
+      "CarImg": "/mg.png",
+      "price": 60000,
+      "qty": 1
+    }
+  ]
+}

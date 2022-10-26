@@ -1,0 +1,86 @@
+.About {
+  display: flex;
+  .container {
+    max-width: 1111px;
+    position: relative;
+    margin-top: 75px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 91%;
+      height: calc(100% + 150px);
+      background-color: $blue-color;
+      left: -75px;
+      top: -75px;
+      z-index: -1;
+    }
+  }
+  .Text_Side {
+    background-color: $orange-color;
+    padding: 40px 15px;
+    color: white;
+    font-weight: bold;
+    .head {
+      font-size: 62px;
+      margin-top: 40px;
+      font-family: $header-font;
+    }
+    .desc {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      font-size: 30px;
+      width: 65%;
+      margin: 25px 0;
+    }
+    .service {
+      width: 200px;
+      margin: 15px 0;
+      background-color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 19px;
+      border: 1px solid white;
+      color: $orange-color;
+      overflow: hidden;
+      z-index: 4;
+      transition: 0.4s;
+      position: relative;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 50%;
+        transition: 0.4s;
+        height: 100%;
+        top: 0;
+        background-color: $orange-color;
+        z-index: -1;
+      }
+      &::before {
+        left: -50%;
+      }
+      &::after {
+        right: -50%;
+      }
+      &:hover {
+        color: white;
+        &::after {
+          right: 0;
+        }
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+  .image_Side {
+    background: url("components/About/About.jpg");
+    background-size: cover;
+    background-position-x: 25%;
+    filter: brightness(0.6);
+  }
+}

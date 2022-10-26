@@ -1,0 +1,66 @@
+.Cart {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  left: -100%;
+  overflow: scroll;
+  height: 100vh;
+  background-color: #eee;
+  top: 0;
+  z-index: 2;
+  transition: 0.5s;
+  padding: 30px 15px;
+  .CartInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 80px;
+    }
+  }
+  .title,
+  .price,
+  .totol {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .CloseCart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: red;
+  }
+  .submitCart {
+    text-align: center;
+    font-size: 23px;
+    background-color: $orange-color;
+    color: white;
+    width: fit-content;
+    padding: 10px 5px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  form {
+    width: 70%;
+    margin: auto;
+    input,
+    button {
+      height: 50px;
+      margin: 12px auto;
+    }
+  }
+  @media (max-width: 767px) {
+    form {
+      width: 100%;
+    }
+    .CartInfo {
+      .title,
+      .price {
+        font-size: 18px;
+      }
+    }
+  }
+}

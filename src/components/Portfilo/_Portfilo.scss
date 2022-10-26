@@ -1,0 +1,97 @@
+.Portfilo {
+  padding: 50px 0;
+  position: relative;
+  margin-top: 80px;
+  .container {
+    max-width: 1120px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: calc(100% + 180px);
+    right: 0;
+    top: 0;
+    background-color: $orange-color;
+    z-index: -2;
+  }
+  .Image_Card {
+    background: url("components/Portfilo/Portfilo.jpg");
+    // filter: brightness(0.6);
+    background-size: cover;
+    background-position-y: 72%;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: linear-gradient(to top, $blue-color, $orange-color);
+      height: calc(100% + 180px);
+      width: 100%;
+      left: -120px;
+      top: -65px;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      height: 80%;
+      width: 100%;
+      top: 10%;
+      left: -10%;
+      border: 25px solid white;
+      z-index: -1;
+    }
+  }
+  .Text_Card {
+    padding: 100px 0 100px 40px;
+    color: white;
+    font-weight: bold;
+    .head {
+      font-size: 40px;
+    }
+    .desc {
+      font-size: 19px;
+      padding: 15px 0;
+      color: #ffffffbf;
+    }
+    .View {
+      width: 200px;
+      margin: 20px 0;
+      border: 1px solid white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 19px;
+      background-color: white;
+      color: $orange-color;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+  .Image_Card,
+  .Text_Card {
+    margin-top: 150px;
+  }
+  @media (max-width: 767px) {
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+    .Image_Card {
+      height: 585px;
+      filter: brightness(0.54);
+      margin-top: 0;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    .Text_Card {
+      margin-top: 0;
+      padding: 40px 0 0 12px;
+    }
+  }
+}

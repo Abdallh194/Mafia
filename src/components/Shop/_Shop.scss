@@ -1,0 +1,69 @@
+.Shop {
+  margin: 40px 0;
+  position: relative;
+  top: 150px;
+  padding: 60px 0;
+  .head {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid;
+    width: fit-content;
+    padding: 0 15px;
+  }
+  .ShopCard_01,
+  .ShopCard_02 {
+    padding: 20px 15px;
+    width: 23%;
+    margin: 20px auto;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    img {
+      height: 170px;
+    }
+  }
+  .title {
+    font-size: 30px;
+    padding: 12px 0;
+  }
+  .price {
+    color: #e6e6e6;
+    font-size: 18px;
+  }
+  .ShopCard_01 {
+    background-color: $orange-color;
+  }
+  .ShopCard_02 {
+    background-color: $blue-color;
+  }
+  .buy {
+    margin: 20px auto 0 auto;
+    font-size: 18px;
+    padding: 10px 0;
+    background-color: white;
+    color: $blue-color;
+    width: 150px;
+    cursor: pointer;
+  }
+  @media (max-width: 992px) {
+    .ShopCard_01,
+    .ShopCard_02 {
+      width: 100%;
+      img {
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    top: 0;
+    .head {
+      padding: 15px 0;
+      border: none;
+    }
+    .ShopCard_01,
+    .ShopCard_02 {
+      margin: 12px 0;
+    }
+  }
+}
