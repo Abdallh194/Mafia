@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Mafia/static/css/main.92446399.css",
+    "main.js": "/Mafia/static/js/main.d14f1255.js",
+    "static/js/787.9181411e.chunk.js": "/Mafia/static/js/787.9181411e.chunk.js",
+    "static/media/test.jpg": "/Mafia/static/media/test.bb9885782443b38dc599.jpg",
+    "static/media/About.jpg": "/Mafia/static/media/About.d586fd904ee2d92c2d83.jpg",
+    "static/media/Contact.jpg": "/Mafia/static/media/Contact.d586fd904ee2d92c2d83.jpg",
+    "static/media/plan.png": "/Mafia/static/media/plan.cace29f87c074f8e6ce6.png",
+    "static/media/Portfilo.jpg": "/Mafia/static/media/Portfilo.e00937f2dc5903e505e5.jpg",
+    "static/media/Footer.jpg": "/Mafia/static/media/Footer.4fe6d2057bcf0675e88f.jpg",
+    "static/media/svg-shape-12.svg": "/Mafia/static/media/svg-shape-12.e731830af06062dc75c2.svg",
+    "index.html": "/Mafia/index.html",
+    "main.92446399.css.map": "/Mafia/static/css/main.92446399.css.map",
+    "main.d14f1255.js.map": "/Mafia/static/js/main.d14f1255.js.map",
+    "787.9181411e.chunk.js.map": "/Mafia/static/js/787.9181411e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92446399.css",
+    "static/js/main.d14f1255.js"
+  ]
+}
